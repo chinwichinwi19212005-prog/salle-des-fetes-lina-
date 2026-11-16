@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>قاعة الحفلات لينا | بئر توتة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="brand" href="#" aria-label="قاعة الحفلات لينا">
+      <!-- ضع ملف اللوغو في images/logo.png -->
+      <img src="images/logo.png" alt="Salle des Fêtes Lina"
+           onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'brand-fallback',textContent:'Salle des Fêtes Lina'}))">
+    </a>
+
+    <button class="menu-btn" aria-label="القائمة" aria-expanded="false" id="menuBtn">☰</button>
+
+    <nav id="nav" aria-label="القائمة الرئيسية">
+      <ul>
+        <li><a href="#" aria-current="page">الرئيسية</a></li>
+        <li><a href="#gallery">المعرض</a></li>
+        <li><a href="#booking">الحجز</a></li>
+        <li><a href="#account">حسابي</a></li>
+        <li><a href="#prices">الأسعار</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+      <a class="login login-m" href="#" data-auth>تسجيل الدخول</a>
+    </nav>
+
+    <a class="login" href="#" data-auth>تسجيل الدخول</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero-bg">
+  <section class="hero">
+    <div>
+      <h1>أفضل قاعة حفلات في المنطقة، بدون منازع</h1>
+      <p>
+        في قلب <strong>بئر توتة</strong>، حيث تتجمع العائلة وتكتمل الفرحة، تقف قاعة لينا
+        كوجهة مميزة لكل من يبحث عن مناسبة تُحكى تفاصيلها طويلاً. من أول خطوة يدخلها العروسان
+        إلى آخر ضحكة في ختام الحفل، نهتم بأدق التفاصيل.
+      </p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#booking">احجز موعدك</a>
+        <a class="btn btn-line" href="#gallery">شاهد القاعة</a>
+      </div>
+    </div>
+
+    <div class="arch">
+      <div class="arch-inner">
+        <img src="images/hero-bg.jpg" alt="قاعة لينا من الداخل">
+      </div>
+      <span class="arch-note">قاعة لينا، بئر توتة</span>
+    </div>
+  </section>
+  </div>
+
+  <section class="services" aria-label="مناسباتنا">
+    <ul>
+      <li>أعراس</li>
+      <li>خطوبة</li>
+      <li>أعياد ميلاد</li>
+      <li>ختان</li>
+      <li>حفلات تخرج</li>
+    </ul>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>المعرض</h2>
+    <p class="lead">القاعة، الموائد، وأطباق مطبخنا. اضغط على أي صورة لتكبيرها.</p>
+    <div class="grid">
+      <button class="shot tall"><img src="images/hero-bg.jpg" alt="القاعة من الداخل" loading="lazy" ></button>
+      <button class="shot wide"><img src="images/hall-arch.jpg" alt="فريق المطبخ" loading="lazy" style="object-position:center 30%"></button>
+      <button class="shot"><img src="images/gallery-1.jpg" alt="طبق سلطة مزين بالورود" loading="lazy" ></button>
+      <button class="shot"><img src="images/gallery-2.jpg" alt="طبق اللحم بالزيتون والكفتة المحشوة" loading="lazy" ></button>
+      <button class="shot tall"><img src="images/gallery-3.jpg" alt="مائدة مجهزة بالأطباق والخبز" loading="lazy" ></button>
+      <button class="shot"><img src="images/gallery-4.jpg" alt="صفوف أطباق السلطة" loading="lazy" ></button>
+      <button class="shot"><img src="images/gallery-5.jpg" alt="حلوى بالمكسرات مع العسل" loading="lazy" ></button>
+      <button class="shot wide"><img src="images/gallery-6.jpg" alt="حلوى بالمكسرات والكراميل" loading="lazy" style="object-position:center 55%"></button>
+    </div>
+    <dialog class="lightbox" id="lightbox">
+      <button aria-label="إغلاق" id="lbClose">✕</button>
+      <img alt="" id="lbImg">
+    </dialog>
+  </section>
+
+  <section class="section" id="prices">
+    <h2>الأسعار</h2>
+    <p class="lead">اختر الصيغة الأقرب لمناسبتك، ونعدّلوها معك حسب الحاجة.</p>
+    <!-- بدّل الأسعار والخدمات بالحقيقية -->
+    <div class="plans">
+      <article class="plan">
+        <h3>الأساسية</h3>
+        <p class="cap"><strong>200 شخص</strong><span>100 رجل و100 امرأة</span></p>
+        <p class="price">000 000 <small>دج</small></p>
+        <ul>
+          <li>القاعة مع الطاولات والكراسي</li>
+          <li>الإضاءة العادية</li>
+          <li>الصوتيات</li>
+        </ul>
+        <a class="btn btn-line" href="#booking">احجز هذه الصيغة</a>
+      </article>
+      <article class="plan featured">
+        <h3>المميزة</h3>
+        <p class="cap"><strong>400 شخص</strong><span>200 رجل و200 امرأة</span></p>
+        <p class="price">000 000 <small>دج</small></p>
+        <ul>
+          <li>كل ما في الأساسية</li>
+          <li>ديكور المنصة</li>
+          <li>إضاءة الأفراح</li>
+          <li>استقبال الضيوف</li>
+        </ul>
+        <a class="btn btn-gold" href="#booking">احجز هذه الصيغة</a>
+      </article>
+      <article class="plan">
+        <h3>VIP</h3>
+        <p class="cap"><strong>500 شخص</strong><span>300 رجل و200 امرأة</span></p>
+        <p class="price">000 000 <small>دج</small></p>
+        <ul>
+          <li>كل ما في المميزة</li>
+          <li>تنسيق كامل للمناسبة</li>
+          <li>خدمة الضيافة</li>
+          <li>أولوية في اختيار التاريخ</li>
+        </ul>
+        <a class="btn btn-line" href="#booking">احجز هذه الصيغة</a>
+      </article>
+    </div>
+    <p class="note">الأسعار تختلف حسب التاريخ وعدد المدعوين.</p>
+  </section>
+
+  <section class="booking" id="booking">
+    <div class="intro">
+      <h2>احجز تاريخ مناسبتك</h2>
+      <p>عمّر المعلومات وبعد الضغط على الزر تتحوّل مباشرة إلى واتساب برسالة جاهزة، ونرجعو لك باش نأكدو التاريخ.</p>
+      <ul class="steps">
+        <li>تعمّر الاستمارة</li>
+        <li>تُرسل لنا الرسالة على واتساب</li>
+        <li>نأكدو لك التاريخ ونحددو موعد الزيارة</li>
+      </ul>
+    </div>
+
+    <form class="card" id="bookingForm" novalidate>
+      <div class="field">
+        <label for="name">الاسم الكامل</label>
+        <input id="name" name="name" type="text" required autocomplete="name" placeholder="مثال: أمينة بن علي">
+      </div>
+      <div class="field">
+        <label for="phone">رقم الهاتف</label>
+        <input id="phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel" dir="ltr" placeholder="05 / 06 / 07 ..." pattern="[0-9+\s]{9,15}">
+      </div>
+      <div class="field">
+        <label for="type">نوع المناسبة</label>
+        <select id="type" name="type" required>
+          <option value="">اختر...</option>
+          <option>عرس</option>
+          <option>خطوبة</option>
+          <option>عيد ميلاد</option>
+          <option>ختان</option>
+          <option>حفل تخرج</option>
+          <option>مناسبة أخرى</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="date">تاريخ المناسبة</label>
+        <input id="date" name="date" type="date" required>
+      </div>
+      <div class="field">
+        <label for="guests">عدد المدعوين تقريبًا</label>
+        <input id="guests" name="guests" type="number" min="10" max="2000" required inputmode="numeric" placeholder="مثال: 250">
+      </div>
+      <div class="field">
+        <label for="time">الفترة</label>
+        <select id="time" name="time">
+          <option>نهارًا</option>
+          <option>مساءً</option>
+          <option>ليلاً</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="notes">ملاحظات (اختياري)</label>
+        <textarea id="notes" name="notes" placeholder="أي طلب خاص: ديكور، صوتيات، منصة..."></textarea>
+      </div>
+      <div class="submit-row">
+        <button type="submit">أرسل الطلب عبر واتساب</button>
+        <span class="hint">لا يتم الحجز نهائيًا إلا بعد التأكيد منا.</span>
+      </div>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+  <section class="section" id="account">
+    <h2>حسابي</h2>
+    <p class="lead">بياناتك الشخصية وحجوزاتك في مكان واحد.</p>
+
+    <div class="box login-needed" id="accOut">
+      <p>سجّل الدخول باش تشوف حجوزاتك وتعدّل بياناتك.</p>
+      <a class="btn btn-gold" href="#" data-auth>تسجيل الدخول أو حساب جديد</a>
+    </div>
+
+    <div class="acc-grid" id="accIn" hidden>
+      <div class="box">
+        <h3>بياناتي</h3>
+        <form class="card" id="profileForm" novalidate>
+          <div class="field"><label for="pfName">الاسم الكامل</label>
+            <input id="pfName" type="text" required autocomplete="name"></div>
+          <div class="field"><label for="pfPhone">رقم الهاتف</label>
+            <input id="pfPhone" type="tel" required inputmode="tel" dir="ltr"></div>
+          <div class="field full"><label for="pfEmail">البريد الإلكتروني</label>
+            <input id="pfEmail" type="email" readonly dir="ltr"></div>
+          <div class="submit-row">
+            <button class="btn btn-gold" type="submit">حفظ التعديلات</button>
+            <span class="hint" id="pfMsg" role="status"></span>
+          </div>
+        </form>
+      </div>
+      <div class="box">
+        <h3>حجوزاتي</h3>
+        <ul class="bk-list" id="bkList"></ul>
+        <p class="empty" id="bkEmpty">ما عندك حتى حجز دابا. عمّر فورم الحجز وراه يظهر هنا.</p>
+        <p class="hint" style="margin-top:14px">التأكيد النهائي للحجز يتم من القاعة عبر واتساب.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog class="auth" id="authDialog" aria-labelledby="authTitle">
+  <button class="auth-close" type="button" id="authClose" aria-label="إغلاق">✕</button>
+
+  <section id="viewAuth">
+    <h3 id="authTitle">حسابك في قاعة لينا</h3>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" id="tabLogin" aria-selected="true">تسجيل الدخول</button>
+      <button type="button" role="tab" id="tabSignup" aria-selected="false">حساب جديد</button>
+    </div>
+
+    <form id="loginForm" novalidate>
+      <div class="field"><label for="liEmail">البريد الإلكتروني</label>
+        <input id="liEmail" type="email" required autocomplete="email" dir="ltr"></div>
+      <div class="field"><label for="liPass">كلمة السر</label>
+        <input id="liPass" type="password" required autocomplete="current-password" dir="ltr"></div>
+      <button class="btn btn-gold" type="submit">دخول</button>
+    </form>
+
+    <form id="signupForm" novalidate hidden>
+      <div class="field"><label for="suName">الاسم الكامل</label>
+        <input id="suName" type="text" required autocomplete="name"></div>
+      <div class="field"><label for="suPhone">رقم الهاتف</label>
+        <input id="suPhone" type="tel" required inputmode="tel" autocomplete="tel" dir="ltr"></div>
+      <div class="field"><label for="suEmail">البريد الإلكتروني</label>
+        <input id="suEmail" type="email" required autocomplete="email" dir="ltr"></div>
+      <div class="field"><label for="suPass">كلمة السر (6 أحرف على الأقل)</label>
+        <input id="suPass" type="password" required minlength="6" autocomplete="new-password" dir="ltr"></div>
+      <button class="btn btn-gold" type="submit">إنشاء الحساب</button>
+    </form>
+
+    <p class="msg" id="authMsg" role="alert"></p>
+    <p class="fine">الحساب يُحفظ في هذا المتصفح فقط. إذا غيّرت الهاتف أو المتصفح، تحتاج تنشئ حسابًا من جديد.</p>
+  </section>
+
+  <section id="viewAccount" hidden>
+    <h3>حسابي</h3>
+    <div class="account">
+      <dl>
+        <dt>الاسم</dt><dd id="acName"></dd>
+        <dt>الهاتف</dt><dd id="acPhone" dir="ltr"></dd>
+        <dt>البريد</dt><dd id="acEmail" dir="ltr"></dd>
+      </dl>
+      <a class="btn btn-gold" href="#account" id="acGo" style="text-align:center">حجوزاتي وبياناتي</a>
+      <a class="btn btn-line" href="#booking" id="acBook" style="text-align:center">احجز الآن</a>
+      <button class="btn btn-line" type="button" id="logoutBtn">تسجيل الخروج</button>
+    </div>
+  </section>
+</dialog>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener">واتساب</a>
+
+<footer id="contact">
+  <div class="contact-links">
+    <a href="https://www.instagram.com/salle_des_fete_lina/" target="_blank" rel="noopener" aria-label="حساب إنستغرام">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+      تابعنا على إنستغرام
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100065382642960&amp;locale=ar_AR" target="_blank" rel="noopener" aria-label="صفحة فيسبوك">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"/>
+      </svg>
+      تابعنا على فيسبوك
+    </a>
+    <a href="https://www.tiktok.com/@salle.des.fte.lin" target="_blank" rel="noopener" aria-label="حساب تيك توك">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M16.6 3c.3 2.3 1.6 3.7 3.9 3.9v3c-1.4.1-2.7-.3-3.9-1.1v5.9c0 3.8-3.1 5.6-6 5-2.5-.5-4.2-2.8-3.8-5.4.4-2.6 2.8-4.3 5.4-3.9v3.1c-1.5-.4-2.8.5-3 1.8-.2 1.5 1 2.6 2.4 2.5 1.2-.1 2-1 2-2.3V3h3z"/>
+      </svg>
+      تابعنا على تيك توك
+    </a>
+    <a href="#" id="waFooter" target="_blank" rel="noopener">راسلنا على واتساب</a>
+  </div>
+  <p>© قاعة الحفلات لينا، بئر توتة</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
